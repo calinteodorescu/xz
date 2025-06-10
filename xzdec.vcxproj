@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D5EB257C-A734-35F5-95C1-75319EB0774A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>xzdec</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\git\xz\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">xzdec.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">xzdec</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\git\xz\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">xzdec.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">xzdec</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\git\xz\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">xzdec.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">xzdec</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\git\xz\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">xzdec.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">xzdec</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\git\xz\src\common;D:\git\xz\src\liblzma\api;D:\git\xz\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;HAVE_MBRTOWC;PACKAGE_NAME="XZ Utils";PACKAGE_BUGREPORT="xz@tukaani.org";PACKAGE_URL="https://tukaani.org/xz/";HAVE_STDBOOL_H;HAVE__BOOL;HAVE_STDINT_H;HAVE_INTTYPES_H;HAVE_CHECK_CRC32;TUKLIB_FAST_UNALIGNED_ACCESS;HAVE___BUILTIN_ASSUME_ALIGNED;MYTHREAD_VISTA;HAVE_CHECK_CRC64;HAVE_CHECK_SHA256;HAVE_MF_HC3;HAVE_MF_HC4;HAVE_MF_BT2;HAVE_MF_BT3;HAVE_MF_BT4;HAVE_ENCODER_LZMA1;HAVE_ENCODER_LZMA2;HAVE_ENCODER_DELTA;HAVE_ENCODER_X86;HAVE_ENCODER_ARM;HAVE_ENCODER_ARMTHUMB;HAVE_ENCODER_ARM64;HAVE_ENCODER_POWERPC;HAVE_ENCODER_IA64;HAVE_ENCODER_SPARC;HAVE_ENCODER_RISCV;HAVE_ENCODERS;HAVE_DECODER_LZMA1;HAVE_DECODER_LZMA2;HAVE_DECODER_DELTA;HAVE_DECODER_X86;HAVE_DECODER_ARM;HAVE_DECODER_ARMTHUMB;HAVE_DECODER_ARM64;HAVE_DECODER_POWERPC;HAVE_DECODER_IA64;HAVE_DECODER_SPARC;HAVE_DECODER_RISCV;HAVE_DECODERS;HAVE_LZIP_DECODER;__GETOPT_PREFIX=rpl_;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;HAVE_MBRTOWC;PACKAGE_NAME=\"XZ Utils\";PACKAGE_BUGREPORT=\"xz@tukaani.org\";PACKAGE_URL=\"https://tukaani.org/xz/\";HAVE_STDBOOL_H;HAVE__BOOL;HAVE_STDINT_H;HAVE_INTTYPES_H;HAVE_CHECK_CRC32;TUKLIB_FAST_UNALIGNED_ACCESS;HAVE___BUILTIN_ASSUME_ALIGNED;MYTHREAD_VISTA;HAVE_CHECK_CRC64;HAVE_CHECK_SHA256;HAVE_MF_HC3;HAVE_MF_HC4;HAVE_MF_BT2;HAVE_MF_BT3;HAVE_MF_BT4;HAVE_ENCODER_LZMA1;HAVE_ENCODER_LZMA2;HAVE_ENCODER_DELTA;HAVE_ENCODER_X86;HAVE_ENCODER_ARM;HAVE_ENCODER_ARMTHUMB;HAVE_ENCODER_ARM64;HAVE_ENCODER_POWERPC;HAVE_ENCODER_IA64;HAVE_ENCODER_SPARC;HAVE_ENCODER_RISCV;HAVE_ENCODERS;HAVE_DECODER_LZMA1;HAVE_DECODER_LZMA2;HAVE_DECODER_DELTA;HAVE_DECODER_X86;HAVE_DECODER_ARM;HAVE_DECODER_ARMTHUMB;HAVE_DECODER_ARM64;HAVE_DECODER_POWERPC;HAVE_DECODER_IA64;HAVE_DECODER_SPARC;HAVE_DECODER_RISCV;HAVE_DECODERS;HAVE_LZIP_DECODER;__GETOPT_PREFIX=rpl_;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\git\xz\src\common;D:\git\xz\src\liblzma\api;D:\git\xz\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\git\xz\src\common;D:\git\xz\src\liblzma\api;D:\git\xz\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Debug\lzma.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/git/xz/Debug/xzdec.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/git/xz/Debug/xzdec.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\git\xz\src\common;D:\git\xz\src\liblzma\api;D:\git\xz\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;HAVE_MBRTOWC;PACKAGE_NAME="XZ Utils";PACKAGE_BUGREPORT="xz@tukaani.org";PACKAGE_URL="https://tukaani.org/xz/";HAVE_STDBOOL_H;HAVE__BOOL;HAVE_STDINT_H;HAVE_INTTYPES_H;HAVE_CHECK_CRC32;TUKLIB_FAST_UNALIGNED_ACCESS;HAVE___BUILTIN_ASSUME_ALIGNED;MYTHREAD_VISTA;HAVE_CHECK_CRC64;HAVE_CHECK_SHA256;HAVE_MF_HC3;HAVE_MF_HC4;HAVE_MF_BT2;HAVE_MF_BT3;HAVE_MF_BT4;HAVE_ENCODER_LZMA1;HAVE_ENCODER_LZMA2;HAVE_ENCODER_DELTA;HAVE_ENCODER_X86;HAVE_ENCODER_ARM;HAVE_ENCODER_ARMTHUMB;HAVE_ENCODER_ARM64;HAVE_ENCODER_POWERPC;HAVE_ENCODER_IA64;HAVE_ENCODER_SPARC;HAVE_ENCODER_RISCV;HAVE_ENCODERS;HAVE_DECODER_LZMA1;HAVE_DECODER_LZMA2;HAVE_DECODER_DELTA;HAVE_DECODER_X86;HAVE_DECODER_ARM;HAVE_DECODER_ARMTHUMB;HAVE_DECODER_ARM64;HAVE_DECODER_POWERPC;HAVE_DECODER_IA64;HAVE_DECODER_SPARC;HAVE_DECODER_RISCV;HAVE_DECODERS;HAVE_LZIP_DECODER;__GETOPT_PREFIX=rpl_;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;HAVE_MBRTOWC;PACKAGE_NAME=\"XZ Utils\";PACKAGE_BUGREPORT=\"xz@tukaani.org\";PACKAGE_URL=\"https://tukaani.org/xz/\";HAVE_STDBOOL_H;HAVE__BOOL;HAVE_STDINT_H;HAVE_INTTYPES_H;HAVE_CHECK_CRC32;TUKLIB_FAST_UNALIGNED_ACCESS;HAVE___BUILTIN_ASSUME_ALIGNED;MYTHREAD_VISTA;HAVE_CHECK_CRC64;HAVE_CHECK_SHA256;HAVE_MF_HC3;HAVE_MF_HC4;HAVE_MF_BT2;HAVE_MF_BT3;HAVE_MF_BT4;HAVE_ENCODER_LZMA1;HAVE_ENCODER_LZMA2;HAVE_ENCODER_DELTA;HAVE_ENCODER_X86;HAVE_ENCODER_ARM;HAVE_ENCODER_ARMTHUMB;HAVE_ENCODER_ARM64;HAVE_ENCODER_POWERPC;HAVE_ENCODER_IA64;HAVE_ENCODER_SPARC;HAVE_ENCODER_RISCV;HAVE_ENCODERS;HAVE_DECODER_LZMA1;HAVE_DECODER_LZMA2;HAVE_DECODER_DELTA;HAVE_DECODER_X86;HAVE_DECODER_ARM;HAVE_DECODER_ARMTHUMB;HAVE_DECODER_ARM64;HAVE_DECODER_POWERPC;HAVE_DECODER_IA64;HAVE_DECODER_SPARC;HAVE_DECODER_RISCV;HAVE_DECODERS;HAVE_LZIP_DECODER;__GETOPT_PREFIX=rpl_;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\git\xz\src\common;D:\git\xz\src\liblzma\api;D:\git\xz\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\git\xz\src\common;D:\git\xz\src\liblzma\api;D:\git\xz\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Release\lzma.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/git/xz/Release/xzdec.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/git/xz/Release/xzdec.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\git\xz\src\common;D:\git\xz\src\liblzma\api;D:\git\xz\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;HAVE_MBRTOWC;PACKAGE_NAME="XZ Utils";PACKAGE_BUGREPORT="xz@tukaani.org";PACKAGE_URL="https://tukaani.org/xz/";HAVE_STDBOOL_H;HAVE__BOOL;HAVE_STDINT_H;HAVE_INTTYPES_H;HAVE_CHECK_CRC32;TUKLIB_FAST_UNALIGNED_ACCESS;HAVE___BUILTIN_ASSUME_ALIGNED;MYTHREAD_VISTA;HAVE_CHECK_CRC64;HAVE_CHECK_SHA256;HAVE_MF_HC3;HAVE_MF_HC4;HAVE_MF_BT2;HAVE_MF_BT3;HAVE_MF_BT4;HAVE_ENCODER_LZMA1;HAVE_ENCODER_LZMA2;HAVE_ENCODER_DELTA;HAVE_ENCODER_X86;HAVE_ENCODER_ARM;HAVE_ENCODER_ARMTHUMB;HAVE_ENCODER_ARM64;HAVE_ENCODER_POWERPC;HAVE_ENCODER_IA64;HAVE_ENCODER_SPARC;HAVE_ENCODER_RISCV;HAVE_ENCODERS;HAVE_DECODER_LZMA1;HAVE_DECODER_LZMA2;HAVE_DECODER_DELTA;HAVE_DECODER_X86;HAVE_DECODER_ARM;HAVE_DECODER_ARMTHUMB;HAVE_DECODER_ARM64;HAVE_DECODER_POWERPC;HAVE_DECODER_IA64;HAVE_DECODER_SPARC;HAVE_DECODER_RISCV;HAVE_DECODERS;HAVE_LZIP_DECODER;__GETOPT_PREFIX=rpl_;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;HAVE_MBRTOWC;PACKAGE_NAME=\"XZ Utils\";PACKAGE_BUGREPORT=\"xz@tukaani.org\";PACKAGE_URL=\"https://tukaani.org/xz/\";HAVE_STDBOOL_H;HAVE__BOOL;HAVE_STDINT_H;HAVE_INTTYPES_H;HAVE_CHECK_CRC32;TUKLIB_FAST_UNALIGNED_ACCESS;HAVE___BUILTIN_ASSUME_ALIGNED;MYTHREAD_VISTA;HAVE_CHECK_CRC64;HAVE_CHECK_SHA256;HAVE_MF_HC3;HAVE_MF_HC4;HAVE_MF_BT2;HAVE_MF_BT3;HAVE_MF_BT4;HAVE_ENCODER_LZMA1;HAVE_ENCODER_LZMA2;HAVE_ENCODER_DELTA;HAVE_ENCODER_X86;HAVE_ENCODER_ARM;HAVE_ENCODER_ARMTHUMB;HAVE_ENCODER_ARM64;HAVE_ENCODER_POWERPC;HAVE_ENCODER_IA64;HAVE_ENCODER_SPARC;HAVE_ENCODER_RISCV;HAVE_ENCODERS;HAVE_DECODER_LZMA1;HAVE_DECODER_LZMA2;HAVE_DECODER_DELTA;HAVE_DECODER_X86;HAVE_DECODER_ARM;HAVE_DECODER_ARMTHUMB;HAVE_DECODER_ARM64;HAVE_DECODER_POWERPC;HAVE_DECODER_IA64;HAVE_DECODER_SPARC;HAVE_DECODER_RISCV;HAVE_DECODERS;HAVE_LZIP_DECODER;__GETOPT_PREFIX=rpl_;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\git\xz\src\common;D:\git\xz\src\liblzma\api;D:\git\xz\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\git\xz\src\common;D:\git\xz\src\liblzma\api;D:\git\xz\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>MinSizeRel\lzma.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/git/xz/MinSizeRel/xzdec.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/git/xz/MinSizeRel/xzdec.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\git\xz\src\common;D:\git\xz\src\liblzma\api;D:\git\xz\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;HAVE_MBRTOWC;PACKAGE_NAME="XZ Utils";PACKAGE_BUGREPORT="xz@tukaani.org";PACKAGE_URL="https://tukaani.org/xz/";HAVE_STDBOOL_H;HAVE__BOOL;HAVE_STDINT_H;HAVE_INTTYPES_H;HAVE_CHECK_CRC32;TUKLIB_FAST_UNALIGNED_ACCESS;HAVE___BUILTIN_ASSUME_ALIGNED;MYTHREAD_VISTA;HAVE_CHECK_CRC64;HAVE_CHECK_SHA256;HAVE_MF_HC3;HAVE_MF_HC4;HAVE_MF_BT2;HAVE_MF_BT3;HAVE_MF_BT4;HAVE_ENCODER_LZMA1;HAVE_ENCODER_LZMA2;HAVE_ENCODER_DELTA;HAVE_ENCODER_X86;HAVE_ENCODER_ARM;HAVE_ENCODER_ARMTHUMB;HAVE_ENCODER_ARM64;HAVE_ENCODER_POWERPC;HAVE_ENCODER_IA64;HAVE_ENCODER_SPARC;HAVE_ENCODER_RISCV;HAVE_ENCODERS;HAVE_DECODER_LZMA1;HAVE_DECODER_LZMA2;HAVE_DECODER_DELTA;HAVE_DECODER_X86;HAVE_DECODER_ARM;HAVE_DECODER_ARMTHUMB;HAVE_DECODER_ARM64;HAVE_DECODER_POWERPC;HAVE_DECODER_IA64;HAVE_DECODER_SPARC;HAVE_DECODER_RISCV;HAVE_DECODERS;HAVE_LZIP_DECODER;__GETOPT_PREFIX=rpl_;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;HAVE_MBRTOWC;PACKAGE_NAME=\"XZ Utils\";PACKAGE_BUGREPORT=\"xz@tukaani.org\";PACKAGE_URL=\"https://tukaani.org/xz/\";HAVE_STDBOOL_H;HAVE__BOOL;HAVE_STDINT_H;HAVE_INTTYPES_H;HAVE_CHECK_CRC32;TUKLIB_FAST_UNALIGNED_ACCESS;HAVE___BUILTIN_ASSUME_ALIGNED;MYTHREAD_VISTA;HAVE_CHECK_CRC64;HAVE_CHECK_SHA256;HAVE_MF_HC3;HAVE_MF_HC4;HAVE_MF_BT2;HAVE_MF_BT3;HAVE_MF_BT4;HAVE_ENCODER_LZMA1;HAVE_ENCODER_LZMA2;HAVE_ENCODER_DELTA;HAVE_ENCODER_X86;HAVE_ENCODER_ARM;HAVE_ENCODER_ARMTHUMB;HAVE_ENCODER_ARM64;HAVE_ENCODER_POWERPC;HAVE_ENCODER_IA64;HAVE_ENCODER_SPARC;HAVE_ENCODER_RISCV;HAVE_ENCODERS;HAVE_DECODER_LZMA1;HAVE_DECODER_LZMA2;HAVE_DECODER_DELTA;HAVE_DECODER_X86;HAVE_DECODER_ARM;HAVE_DECODER_ARMTHUMB;HAVE_DECODER_ARM64;HAVE_DECODER_POWERPC;HAVE_DECODER_IA64;HAVE_DECODER_SPARC;HAVE_DECODER_RISCV;HAVE_DECODERS;HAVE_LZIP_DECODER;__GETOPT_PREFIX=rpl_;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\git\xz\src\common;D:\git\xz\src\liblzma\api;D:\git\xz\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\git\xz\src\common;D:\git\xz\src\liblzma\api;D:\git\xz\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>RelWithDebInfo\lzma.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/git/xz/RelWithDebInfo/xzdec.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/git/xz/RelWithDebInfo/xzdec.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\git\xz\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/git/xz/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Tools\msys64\mingw64\bin\cmake.exe -SD:/git/xz -BD:/git/xz --check-stamp-file D:/git/xz/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Tools\msys64\mingw64\share\cmake\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeCCompiler.cmake.in;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeCCompilerABI.c;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeCInformation.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeCommonLanguageInclude.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeCompilerIdDetection.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeDetermineCCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeDetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeDetermineCompilerABI.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeDetermineCompilerId.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeDetermineCompilerSupport.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeDetermineRCCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeDetermineSystem.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeFindBinUtils.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeGenericSystem.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeInitializeConfigs.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeLanguageInformation.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakePackageConfigHelpers.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeParseLibraryArchitecture.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakePushCheckState.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeRCCompiler.cmake.in;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeRCInformation.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeSystem.cmake.in;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeSystemSpecificInformation.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeSystemSpecificInitialize.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeTestCCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeTestCompilerCommon.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeTestRCCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CTest.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CTestTargets.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CTestUseLaunchers.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckCCompilerFlag.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckCSourceCompiles.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckCXXSourceCompiles.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckIncludeFile.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckIncludeFileCXX.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckLibraryExists.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckLinkerFlag.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckSourceCompiles.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckStructHasMember.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckSymbolExists.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckTypeSize.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\MSVC-C.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\MSVC.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CompilerId\VS-10.vcxproj.in;C:\Tools\msys64\mingw64\share\cmake\Modules\DartConfiguration.tcl.in;C:\Tools\msys64\mingw64\share\cmake\Modules\FindGettext.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\FindIntl.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\FindPackageHandleStandardArgs.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\FindPackageMessage.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\FindThreads.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\GNUInstallDirs.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Internal\CMakeInspectCLinker.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Internal\CheckCompilerFlag.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Internal\CheckLinkerFlag.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Internal\CheckSourceCompiles.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Internal\FeatureTesting.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Linker\MSVC-C.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Linker\MSVC.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Platform\Windows-Initialize.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Platform\Windows-MSVC-C.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Platform\Windows-MSVC.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Platform\Windows.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Platform\WindowsPaths.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\TestBigEndian.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\WriteBasicConfigVersionFile.cmake;D:\git\xz\CMakeFiles\4.0.2\CMakeCCompiler.cmake;D:\git\xz\CMakeFiles\4.0.2\CMakeRCCompiler.cmake;D:\git\xz\CMakeFiles\4.0.2\CMakeSystem.cmake;D:\git\xz\cmake\tuklib_common.cmake;D:\git\xz\cmake\tuklib_cpucores.cmake;D:\git\xz\cmake\tuklib_integer.cmake;D:\git\xz\cmake\tuklib_large_file_support.cmake;D:\git\xz\cmake\tuklib_mbstr.cmake;D:\git\xz\cmake\tuklib_physmem.cmake;D:\git\xz\cmake\tuklib_progname.cmake;D:\git\xz\lib\getopt.in.h;D:\git\xz\src\liblzma\liblzma.pc.in;D:\git\xz\tests\tests.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\git\xz\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/git/xz/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Tools\msys64\mingw64\bin\cmake.exe -SD:/git/xz -BD:/git/xz --check-stamp-file D:/git/xz/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Tools\msys64\mingw64\share\cmake\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeCCompiler.cmake.in;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeCCompilerABI.c;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeCInformation.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeCommonLanguageInclude.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeCompilerIdDetection.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeDetermineCCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeDetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeDetermineCompilerABI.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeDetermineCompilerId.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeDetermineCompilerSupport.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeDetermineRCCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeDetermineSystem.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeFindBinUtils.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeGenericSystem.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeInitializeConfigs.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeLanguageInformation.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakePackageConfigHelpers.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeParseLibraryArchitecture.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakePushCheckState.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeRCCompiler.cmake.in;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeRCInformation.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeSystem.cmake.in;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeSystemSpecificInformation.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeSystemSpecificInitialize.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeTestCCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeTestCompilerCommon.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeTestRCCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CTest.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CTestTargets.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CTestUseLaunchers.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckCCompilerFlag.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckCSourceCompiles.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckCXXSourceCompiles.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckIncludeFile.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckIncludeFileCXX.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckLibraryExists.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckLinkerFlag.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckSourceCompiles.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckStructHasMember.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckSymbolExists.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckTypeSize.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\MSVC-C.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\MSVC.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CompilerId\VS-10.vcxproj.in;C:\Tools\msys64\mingw64\share\cmake\Modules\DartConfiguration.tcl.in;C:\Tools\msys64\mingw64\share\cmake\Modules\FindGettext.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\FindIntl.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\FindPackageHandleStandardArgs.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\FindPackageMessage.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\FindThreads.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\GNUInstallDirs.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Internal\CMakeInspectCLinker.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Internal\CheckCompilerFlag.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Internal\CheckLinkerFlag.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Internal\CheckSourceCompiles.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Internal\FeatureTesting.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Linker\MSVC-C.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Linker\MSVC.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Platform\Windows-Initialize.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Platform\Windows-MSVC-C.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Platform\Windows-MSVC.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Platform\Windows.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Platform\WindowsPaths.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\TestBigEndian.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\WriteBasicConfigVersionFile.cmake;D:\git\xz\CMakeFiles\4.0.2\CMakeCCompiler.cmake;D:\git\xz\CMakeFiles\4.0.2\CMakeRCCompiler.cmake;D:\git\xz\CMakeFiles\4.0.2\CMakeSystem.cmake;D:\git\xz\cmake\tuklib_common.cmake;D:\git\xz\cmake\tuklib_cpucores.cmake;D:\git\xz\cmake\tuklib_integer.cmake;D:\git\xz\cmake\tuklib_large_file_support.cmake;D:\git\xz\cmake\tuklib_mbstr.cmake;D:\git\xz\cmake\tuklib_physmem.cmake;D:\git\xz\cmake\tuklib_progname.cmake;D:\git\xz\lib\getopt.in.h;D:\git\xz\src\liblzma\liblzma.pc.in;D:\git\xz\tests\tests.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\git\xz\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/git/xz/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Tools\msys64\mingw64\bin\cmake.exe -SD:/git/xz -BD:/git/xz --check-stamp-file D:/git/xz/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Tools\msys64\mingw64\share\cmake\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeCCompiler.cmake.in;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeCCompilerABI.c;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeCInformation.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeCommonLanguageInclude.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeCompilerIdDetection.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeDetermineCCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeDetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeDetermineCompilerABI.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeDetermineCompilerId.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeDetermineCompilerSupport.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeDetermineRCCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeDetermineSystem.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeFindBinUtils.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeGenericSystem.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeInitializeConfigs.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeLanguageInformation.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakePackageConfigHelpers.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeParseLibraryArchitecture.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakePushCheckState.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeRCCompiler.cmake.in;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeRCInformation.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeSystem.cmake.in;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeSystemSpecificInformation.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeSystemSpecificInitialize.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeTestCCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeTestCompilerCommon.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeTestRCCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CTest.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CTestTargets.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CTestUseLaunchers.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckCCompilerFlag.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckCSourceCompiles.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckCXXSourceCompiles.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckIncludeFile.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckIncludeFileCXX.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckLibraryExists.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckLinkerFlag.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckSourceCompiles.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckStructHasMember.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckSymbolExists.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckTypeSize.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\MSVC-C.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\MSVC.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CompilerId\VS-10.vcxproj.in;C:\Tools\msys64\mingw64\share\cmake\Modules\DartConfiguration.tcl.in;C:\Tools\msys64\mingw64\share\cmake\Modules\FindGettext.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\FindIntl.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\FindPackageHandleStandardArgs.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\FindPackageMessage.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\FindThreads.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\GNUInstallDirs.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Internal\CMakeInspectCLinker.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Internal\CheckCompilerFlag.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Internal\CheckLinkerFlag.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Internal\CheckSourceCompiles.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Internal\FeatureTesting.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Linker\MSVC-C.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Linker\MSVC.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Platform\Windows-Initialize.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Platform\Windows-MSVC-C.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Platform\Windows-MSVC.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Platform\Windows.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Platform\WindowsPaths.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\TestBigEndian.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\WriteBasicConfigVersionFile.cmake;D:\git\xz\CMakeFiles\4.0.2\CMakeCCompiler.cmake;D:\git\xz\CMakeFiles\4.0.2\CMakeRCCompiler.cmake;D:\git\xz\CMakeFiles\4.0.2\CMakeSystem.cmake;D:\git\xz\cmake\tuklib_common.cmake;D:\git\xz\cmake\tuklib_cpucores.cmake;D:\git\xz\cmake\tuklib_integer.cmake;D:\git\xz\cmake\tuklib_large_file_support.cmake;D:\git\xz\cmake\tuklib_mbstr.cmake;D:\git\xz\cmake\tuklib_physmem.cmake;D:\git\xz\cmake\tuklib_progname.cmake;D:\git\xz\lib\getopt.in.h;D:\git\xz\src\liblzma\liblzma.pc.in;D:\git\xz\tests\tests.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\git\xz\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/git/xz/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Tools\msys64\mingw64\bin\cmake.exe -SD:/git/xz -BD:/git/xz --check-stamp-file D:/git/xz/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Tools\msys64\mingw64\share\cmake\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeCCompiler.cmake.in;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeCCompilerABI.c;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeCInformation.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeCommonLanguageInclude.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeCompilerIdDetection.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeDetermineCCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeDetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeDetermineCompilerABI.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeDetermineCompilerId.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeDetermineCompilerSupport.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeDetermineRCCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeDetermineSystem.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeFindBinUtils.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeGenericSystem.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeInitializeConfigs.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeLanguageInformation.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakePackageConfigHelpers.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeParseLibraryArchitecture.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakePushCheckState.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeRCCompiler.cmake.in;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeRCInformation.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeSystem.cmake.in;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeSystemSpecificInformation.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeSystemSpecificInitialize.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeTestCCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeTestCompilerCommon.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CMakeTestRCCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CTest.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CTestTargets.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CTestUseLaunchers.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckCCompilerFlag.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckCSourceCompiles.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckCXXSourceCompiles.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckIncludeFile.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckIncludeFileCXX.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckLibraryExists.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckLinkerFlag.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckSourceCompiles.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckStructHasMember.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckSymbolExists.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CheckTypeSize.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\MSVC-C.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\MSVC.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\CompilerId\VS-10.vcxproj.in;C:\Tools\msys64\mingw64\share\cmake\Modules\DartConfiguration.tcl.in;C:\Tools\msys64\mingw64\share\cmake\Modules\FindGettext.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\FindIntl.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\FindPackageHandleStandardArgs.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\FindPackageMessage.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\FindThreads.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\GNUInstallDirs.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Internal\CMakeInspectCLinker.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Internal\CheckCompilerFlag.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Internal\CheckLinkerFlag.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Internal\CheckSourceCompiles.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Internal\FeatureTesting.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Linker\MSVC-C.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Linker\MSVC.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Platform\Windows-Initialize.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Platform\Windows-MSVC-C.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Platform\Windows-MSVC.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Platform\Windows.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\Platform\WindowsPaths.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\TestBigEndian.cmake;C:\Tools\msys64\mingw64\share\cmake\Modules\WriteBasicConfigVersionFile.cmake;D:\git\xz\CMakeFiles\4.0.2\CMakeCCompiler.cmake;D:\git\xz\CMakeFiles\4.0.2\CMakeRCCompiler.cmake;D:\git\xz\CMakeFiles\4.0.2\CMakeSystem.cmake;D:\git\xz\cmake\tuklib_common.cmake;D:\git\xz\cmake\tuklib_cpucores.cmake;D:\git\xz\cmake\tuklib_integer.cmake;D:\git\xz\cmake\tuklib_large_file_support.cmake;D:\git\xz\cmake\tuklib_mbstr.cmake;D:\git\xz\cmake\tuklib_physmem.cmake;D:\git\xz\cmake\tuklib_progname.cmake;D:\git\xz\lib\getopt.in.h;D:\git\xz\src\liblzma\liblzma.pc.in;D:\git\xz\tests\tests.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\git\xz\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\git\xz\src\common\my_landlock.h" />
+    <ClInclude Include="D:\git\xz\src\common\sysdefs.h" />
+    <ClInclude Include="D:\git\xz\src\common\tuklib_common.h" />
+    <ClInclude Include="D:\git\xz\src\common\tuklib_config.h" />
+    <ClCompile Include="D:\git\xz\src\common\tuklib_mbstr_nonprint.c" />
+    <ClInclude Include="D:\git\xz\src\common\tuklib_mbstr_nonprint.h" />
+    <ClCompile Include="D:\git\xz\src\common\tuklib_exit.c" />
+    <ClInclude Include="D:\git\xz\src\common\tuklib_exit.h" />
+    <ClInclude Include="D:\git\xz\src\common\tuklib_gettext.h" />
+    <ClCompile Include="D:\git\xz\src\common\tuklib_progname.c" />
+    <ClInclude Include="D:\git\xz\src\common\tuklib_progname.h" />
+    <ClCompile Include="D:\git\xz\src\xzdec\xzdec.c" />
+    <ResourceCompile Include="D:\git\xz\src\xzdec\xzdec_w32res.rc" />
+    <Object Include="D:\git\xz\libgnu.dir\$(Configuration)\getopt1.obj" />
+    <Object Include="D:\git\xz\libgnu.dir\$(Configuration)\getopt.obj" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\git\xz\ZERO_CHECK.vcxproj">
+      <Project>{51EF36F8-81D5-3BAE-8ADC-5EE589518A7F}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\git\xz\libgnu.vcxproj">
+      <Project>{1768CF9D-D9FF-3BC0-9A60-65FB6FA3810C}</Project>
+      <Name>libgnu</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\git\xz\liblzma.vcxproj">
+      <Project>{57D9CE62-E706-3A2D-8D28-A2B473BA5BC9}</Project>
+      <Name>liblzma</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
